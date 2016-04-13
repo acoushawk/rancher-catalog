@@ -1,0 +1,7 @@
+ha:
+  image: balloob/home-assistant
+  volumes:
+  - /home/rancher
+  dockerfile: ${location}
+
+

@@ -1,0 +1,27 @@
+.catalog:
+  name: Home Assistant
+  version: 0.17.1
+  description: |
+    "Home Assistant"
+  minimum_rancher_version: v0.56.0
+  maintainer: "Matt Armstrong <>"
+  uuid: ha-0
+  questions:
+    - variable: "location"
+      description: "location to serve up"
+      label: "Hostname:"
+      type: "enum"
+        - Main
+        - LivingRoom
+        - Kitchen
+
+ha:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 80
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2
