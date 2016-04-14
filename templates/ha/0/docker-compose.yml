@@ -6,5 +6,5 @@ Living-Room:
 
 Family-Room:
   image: balloob/home-assistant
-  volums:
-    - /home/rancher/scripts/Egon/HA_Configs/faimly-room:/usr/src/app/config
+  volumes:
+    - /home/rancher/scripts/Egon/HA_Configs/family-room:/usr/src/app/config
