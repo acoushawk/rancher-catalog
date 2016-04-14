@@ -1,17 +1,15 @@
 .catalog:
-  name: Home Assistant
-  version: 0.17.1
-  description: |
-    "Home Assistant"
+  name: "Home Assistant"
+  version: "0.17.1"
+  description: "Home Assistant"
   uuid: ha-0
   questions:
     - variable: "location"
       description: "location to serve up"
       label: "Hostname"
-      type: "enum"
-        - Main
-        - LivingRoom
-        - Kitchen
+      type: "string"
+      default: "testing"
+      required: true
 
 ha:
   scale: 1
