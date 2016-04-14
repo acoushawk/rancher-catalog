@@ -2,7 +2,7 @@
   name: Home Assistant
   version: 0.17.1
   description: |
-  "Home Assistant"
+    "Home Assistant"
   uuid: ha-0
   questions:
     - variable: "location"
