@@ -1,0 +1,7 @@
+name: Gitlab
+description: |
+  Gitlab: An open source git repository manager.
+version: 8.5.1-0
+category: "Git"
+maintainer: Stefan Legg <>
+projectURL: https://www.github.com/stefanlegg/arakyta-rancher-catalog
