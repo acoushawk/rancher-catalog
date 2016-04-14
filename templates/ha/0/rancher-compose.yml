@@ -5,9 +5,9 @@
   uuid: ha-0
 
 
-Living_Room:
+Living-Room:
   scale: 1
   retain_ip: true
 
-Family_Room:
+Family-Room:
   sacle: 1
