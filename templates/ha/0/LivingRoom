@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 
 RUN pip3 install --no-cache-dir colorlog cython
 
-git clone https://github.com/matt/rancher-catalog.gitz
+RUN mkdir /usr/src/app/testingscript
 
 # For the nmap tracker
 RUN apt-get update && \
