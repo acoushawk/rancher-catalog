@@ -1,15 +1,12 @@
 .catalog:
-  name: Home Assistant
+  name: "Home Assistant"
   version: 0.17.1
-  description: |
-    "Home Assistant"
-  minimum_rancher_version: v0.56.0
-  maintainer: "Matt Armstrong <>"
+  description: "Home Assistant"
   uuid: ha-0
   questions:
     - variable: "location"
       description: "location to serve up"
-      label: "Hostname:"
+      label: "Hostname"
       type: "enum"
         - Main
         - LivingRoom
