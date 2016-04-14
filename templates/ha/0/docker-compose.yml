@@ -1,7 +1,10 @@
-ha:
+Living_Room:
   image: balloob/home-assistant
   volumes:
-    - /home/rancher/scripts/Egon/HA_Configs/${location}:/usr/src/app/config
-  dockerfile: ${location}
+    - /home/rancher/scripts/Egon/HA_Configs/living-room:/usr/src/app/config
+  dockerfile: Living_Room
 
-
+Family_Room:
+  image: balloob/home-assistant
+  volums:
+    - /home/rancher/scripts/Egon/HA_Configs/faimly-room:/usr/src/app/config
