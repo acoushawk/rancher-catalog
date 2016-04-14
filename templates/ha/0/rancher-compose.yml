@@ -7,9 +7,11 @@
     - variable: "location"
       description: "location to serve up"
       label: "Hostname"
-      type: "string"
-      default: "testing"
-      required: true
+      type: "enum"
+      options:
+        - Main
+        - LivingRoom
+        - Kitchen
 
 ha:
   scale: 1
