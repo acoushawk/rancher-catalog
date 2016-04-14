@@ -1,7 +1,7 @@
 ha:
   image: balloob/home-assistant
   volumes:
-  - /home/rancher
+    - /home/rancher/scripts/Egon/HA_Configs/${location}:/usr/src/app/config
   dockerfile: ${location}
 
 
