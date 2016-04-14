@@ -1,6 +1,5 @@
 name: Home Assistant
-description: | Home Assistant Home Automation Project.
+description: |
+Home Assistant Home Automation Project.
 version: 0.17.1
-category: "Home Automation"
-maintainer: Matt Armstrong
-projectURL: https://www.github.com/acoushawk/rancher-catalog
+category: Home Automation
