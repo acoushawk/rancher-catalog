@@ -2,8 +2,7 @@ living-room:
   image: balloob/home-assistant
   volumes:
     - /home/rancher/scripts/Egon/HA_Configs/living-room:/usr/src/app/config
-  labels:
-    io.rancher.container.hostname_override: living-room
+  hostname: living-room
 
 
 Home-Assist-Web-UI:
@@ -23,3 +22,10 @@ family-room:
   image: balloob/home-assistant
   volumes:
     - /home/rancher/scripts/Egon/HA_Configs/family-room:/usr/src/app/config
+  hostname: family-room
+
+nginx:
+  image: nginx
+  links:
+  - living-room:living-room
+  - family-room:family-room
