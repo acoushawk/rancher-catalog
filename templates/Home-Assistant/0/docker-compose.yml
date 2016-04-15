@@ -1,7 +1,7 @@
 living-room:
   build:
     context: .
-    dockerfile: https://github.com/acoushawk/rancher-catalog/templates/Home-Assistant/0/Dockerfile
+    dockerfile: https://raw.githubusercontent.com/acoushawk/rancher-catalog/master/templates/Home-Assistant/0/LivingRoom
   volumes:
     - /home/rancher/scripts/Egon/HA_Configs/living-room:/usr/src/app/config
   hostname: living-room
