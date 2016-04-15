@@ -1,7 +1,9 @@
 Living-Room:
   volumes:
     - /home/rancher/scripts/Egon/HA_Configs/living-room:/usr/src/app/config
-  dockerfile: LivingRoom
+  build:
+    context: .
+    dockerfile: LivingRoom
 
 Home-Assist-Web-UI:
   ports:
