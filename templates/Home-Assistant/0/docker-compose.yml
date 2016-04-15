@@ -1,5 +1,6 @@
 living-room:
-  build: https://raw.githubusercontent.com/acoushawk/rancher-catalog/master/templates/Home-Assistant/0/LivingRoom
+  image: balloob/home-assistant
+  dockerfile: https://raw.githubusercontent.com/acoushawk/rancher-catalog/master/templates/Home-Assistant/0/LivingRoom
   volumes:
     - /home/rancher/scripts/Egon/HA_Configs/living-room:/usr/src/app/config
   hostname: living-room
