@@ -4,20 +4,6 @@ living-room:
     - /home/rancher/scripts/Egon/HA_Configs/living-room:/usr/src/app/config
   hostname: living-room
 
-
-Home-Assist-Web-UI:
-  ports:
-  - 80:8123
-  labels:
-    io.rancher.loadbalancer.target.Family-Room: family-room.egonspangler.com:80=8123
-    io.rancher.loadbalancer.target.Living-Room: living-room.egonspangler.com:80=8123
-  tty: true
-  image: rancher/load-balancer-service
-  links:
-  - living-room:living-room
-  - family-room:family-room
-  stdin_open: true
-
 family-room:
   image: balloob/home-assistant
   volumes:
@@ -29,3 +15,5 @@ nginx:
   links:
   - living-room:living-room
   - family-room:family-room
+  ports:
+  - 80:80
