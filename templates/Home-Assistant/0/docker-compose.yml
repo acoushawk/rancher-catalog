@@ -1,7 +1,9 @@
-Living-Room:
+living-room:
   image: balloob/home-assistant
   volumes:
     - /home/rancher/scripts/Egon/HA_Configs/living-room:/usr/src/app/config
+  labels:
+    io.rancher.container.hostname_override: living-room
 
 
 Home-Assist-Web-UI:
@@ -13,11 +15,11 @@ Home-Assist-Web-UI:
   tty: true
   image: rancher/load-balancer-service
   links:
-  - Living-Room:Living-Room
-  - Family-Room:Family-Room
+  - living-room:living-room
+  - family-room:family-room
   stdin_open: true
 
-Family-Room:
+family-room:
   image: balloob/home-assistant
   volumes:
     - /home/rancher/scripts/Egon/HA_Configs/family-room:/usr/src/app/config
