@@ -21,5 +21,6 @@ nginx:
   links:
   - living-room:living-room
   - family-room:family-room
+  - master-bedroom:master-bedroom
   ports:
   - 80:80
