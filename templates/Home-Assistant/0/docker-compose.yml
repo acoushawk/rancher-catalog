@@ -15,15 +15,16 @@ master-bedroom:
   volumes:
     - master-bedroom:/usr/src/app/config
   hostname: master-bedroom
-
-nginx:
-  image: nginx
+  
+squid:
+  image: sameersbn/squid:3.3.8-19
   volumes:
-    - nginx:/etc/nginx
-    - nginxhtml:/usr/share/nginx/html
+    - squidconf:/etc/squid3/squid.conf
+    - squidspool:/var/spool/squid3
   links:
-  - living-room:living-room
-  - family-room:family-room
-  - master-bedroom:master-bedroom
+    - living-room:living-room
+    - family-room:family-room
+    - master-bedroom:master-bedroom
   ports:
-  - 80:80
+    - 80:80
+    - 3128:3128
