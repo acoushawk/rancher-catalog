@@ -20,6 +20,7 @@ nginx:
   image: nginx
   volumes:
     - nginx:/etc/nginx
+    - nginxhtml:/usr/share/nginx/html
   links:
   - living-room:living-room
   - family-room:family-room
