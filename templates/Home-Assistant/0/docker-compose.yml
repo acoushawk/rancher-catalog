@@ -1,19 +1,19 @@
 living-room:
   image: homeassistant/home-assistant
   volumes:
-    - /home/rancher/scripts/Egon/HA_Configs/living-room:/usr/src/app/config
+    - living-room:/usr/src/app/config
   hostname: living-room
 
 family-room:
   image: homeassistant/home-assistant
   volumes:
-    - /home/rancher/scripts/Egon/HA_Configs/family-room:/usr/src/app/config
+    - family-room:/usr/src/app/config
   hostname: family-room
 
 master-bedroom:
   image: homeassistant/home-assistant
   volumes:
-    - /home/rancher/scripts/Egon/HA_Configs/master-bedroom:/usr/src/app/config
+    - master-bedroom:/usr/src/app/config
   hostname: master-bedroom
 
 nginx:
