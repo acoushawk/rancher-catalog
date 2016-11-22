@@ -1,5 +1,5 @@
 letsencrypt:
-  image: quay.io/letsencrypt/letsencrypt:latest certonly
+  image: quay.io/letsencrypt/letsencrypt:latest
   volumes:
     - /etc/letsencrypt:/etc/letsencrypt
     - /var/lib/letsencrypt:/var/lib/letsencrypt
