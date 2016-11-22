@@ -1,0 +1,8 @@
+letsencrypt:
+  image: quay.io/letsencrypt/letsencrypt:latest certonly
+  volumes:
+    - /etc/letsencrypt:/etc/letsencrypt
+    - /var/lib/letsencrypt:/var/lib/letsencrypt
+  ports:
+    - 80:80
+    - 443:443 
