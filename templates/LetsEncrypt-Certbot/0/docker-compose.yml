@@ -6,4 +6,5 @@ letsencrypt:
   ports:
     - 80:80
     - 443:443 
-  - certonly
+  args:
+    - certonly
