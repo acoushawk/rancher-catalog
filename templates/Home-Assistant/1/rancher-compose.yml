@@ -3,15 +3,8 @@
   version: "0.2"
   description: "Home Assistant Build"
   questions:
-   - variable: "HA-CONFIGS"
-     label: "Path to store configs (IE /mnt/configs/HA-Configs)"
-     description: "This is where you set your path for config file persistence"
-     type: "string"
-     required: "true"
-   
-Living-Room:
-  scale: 1
-  retain_ip: true
-
-Family-Room:
-  sacle: 1
+    - variable: "HA-CONFIGS"
+      label: "Path to store configs (IE /mnt/configs/HA-Configs)"
+      description: "This is where you set your path for config file persistence"
+      type: "string"
+      required: "true"
