@@ -1,6 +1,0 @@
-certbot:
-  image: certbot/certbot
-  volumes:
-    - letsencrypt:/var/lib/letsencrypt
-  ports:
-    - 443:443

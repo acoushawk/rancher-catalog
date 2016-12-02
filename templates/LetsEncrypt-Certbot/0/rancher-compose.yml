@@ -1,5 +1,0 @@
-.catalog:
-  name: "LetsEncrypt Certbot"
-  version: "0.17.1"
-  description: "SSL"
-  uuid: ha-0
