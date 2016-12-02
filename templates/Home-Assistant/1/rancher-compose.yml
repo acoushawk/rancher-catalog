@@ -3,7 +3,7 @@
   version: "0.20.0"
   description: "Home Assistant Build"
   questions:
-    - variable: "ha_configs
+    - variable: "ha_configs"
       label: "Path to store configs (IE /mnt/configs/HA-Configs)"
       description: "This is where you set your path for config file persistence"
       type: "string"
