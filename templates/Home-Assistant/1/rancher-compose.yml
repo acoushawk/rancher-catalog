@@ -9,3 +9,9 @@
      type: "string"
      required: "true"
    
+Living-Room:
+  scale: 1
+  retain_ip: true
+
+Family-Room:
+  sacle: 1
