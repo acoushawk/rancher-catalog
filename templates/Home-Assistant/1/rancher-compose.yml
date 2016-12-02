@@ -2,7 +2,6 @@
   name: "Home Assistant"
   version: "0.2"
   description: "Home Assistant Build"
-  uuid: ha-1
   questions:
    - variable: "HA-CONFIGS"
      label: "Path to store configs (IE /mnt/configs/HA-Configs)"

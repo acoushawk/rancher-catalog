@@ -2,7 +2,6 @@
   name: "Home Assistant"
   version: "0.17.1"
   description: "Home Assistant"
-  uuid: ha-0
 
 
 Living-Room:
