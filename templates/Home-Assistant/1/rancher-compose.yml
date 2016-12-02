@@ -1,6 +1,6 @@
 .catalog:
   name: "Home Assistant"
-  version: "0.2"
+  version: "0.20.0"
   description: "Home Assistant Build"
   questions:
     - variable: "HA-CONFIGS"
