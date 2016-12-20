@@ -1,0 +1,12 @@
+.catalog:
+  name: "Home Assistant"
+  version: "0.17.1"
+  description: "Home Assistant"
+
+
+Living-Room:
+  scale: 1
+  retain_ip: true
+
+Family-Room:
+  sacle: 1

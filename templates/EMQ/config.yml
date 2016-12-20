@@ -1,0 +1,5 @@
+name: Home Assistant
+description: |
+  Home Assistant Home Automation Project.
+version: 0.20.0
+category: "Home Automation"
