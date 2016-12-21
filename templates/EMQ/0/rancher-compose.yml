@@ -1,6 +1,6 @@
 .catalog:
   name: "EMQTT"
-  version: "0.17.1"
+  version: "0.1.0"
   description: "EMQ Server"
   questions:
     - variable: "config_location"
