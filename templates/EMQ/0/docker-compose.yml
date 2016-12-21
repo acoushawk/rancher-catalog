@@ -1,7 +1,7 @@
 emq:
   image: acoushawk/docker-emq
   volumes:
-    - ${config_location}:/tmp
+    - ${config_location}:/opt/emqttd
   hostname: emq
   ports:
     - 18083:18083
