@@ -1,5 +1,5 @@
-name: Home Assistant
+name: EMQ Server
 description: |
-  Home Assistant Home Automation Project.
+  EMQ Server.
 version: 0.20.0
-category: "Home Automation"
+category: "MQTT Server"

@@ -1,12 +1,10 @@
 .catalog:
-  name: "Home Assistant"
+  name: "EMQTT"
   version: "0.17.1"
-  description: "Home Assistant"
-
-
-Living-Room:
-  scale: 1
-  retain_ip: true
-
-Family-Room:
-  sacle: 1
+  description: "EMQ Server"
+  questions:
+    - variable: "config_location"
+      label: "Path to store configs (IE /opt/emqttd)"
+      description: "This is where you set your path for config file persistence"
+      type: "string"
+      required: true
