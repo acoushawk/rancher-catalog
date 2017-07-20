@@ -15,6 +15,9 @@ master-bedroom:
   volumes:
     - ${ha_configs}/master-bedroom:/config
   hostname: master-bedroom
+  ports:
+    - 8300:8300
+    - 8080:8080
 
 nginx:
   image: nginx
