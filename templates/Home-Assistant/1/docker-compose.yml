@@ -17,7 +17,7 @@ master-bedroom:
   hostname: master-bedroom
   ports:
     - 8300:8300
-    - 8080:8080
+    - 8301:8301
 
 nginx:
   image: nginx
