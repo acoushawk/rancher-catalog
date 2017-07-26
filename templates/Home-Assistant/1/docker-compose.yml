@@ -24,7 +24,6 @@ remote:
   volumes:
     - ${ha_configs}/remote:/config
   hostname: remote
-  ports:
 
 nginx:
   image: nginx
