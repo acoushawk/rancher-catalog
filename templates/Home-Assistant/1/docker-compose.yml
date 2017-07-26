@@ -19,6 +19,13 @@ master-bedroom:
     - 8300:8300
     - 8301:8301
 
+remote:
+  image: homeassistant/home-assistant
+  volumes:
+    - ${ha_configs}/remote:/config
+  hostname: remote
+  ports:
+
 nginx:
   image: nginx
   volumes:
@@ -27,5 +34,6 @@ nginx:
     - living-room:living-room
     - family-room:family-room
     - master-bedroom:master-bedroom
+    - remote:remote
   ports:
     - 80:80
