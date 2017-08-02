@@ -24,8 +24,6 @@ nginx:
   volumes:
     - ${ha_configs}/nginx:/etc/nginx
   links:
-    - living-room:living-room
-    - family-room:family-room
     - master-bedroom:master-bedroom
     - remote:remote
   ports:
