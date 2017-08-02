@@ -1,23 +1,17 @@
-living-room:
+main:
   image: homeassistant/home-assistant
   volumes:
-    - ${ha_configs}/living-room:/config
-  hostname: living-room
-
-family-room:
-  image: homeassistant/home-assistant
-  volumes:
-    - ${ha_configs}/family-room:/config
-  hostname: family-room
+    - ${ha_configs}/main:/config
+  hostname: main
+  ports:
+    - 8303:8303
+  network_mode: "host"
 
 master-bedroom:
   image: homeassistant/home-assistant
   volumes:
     - ${ha_configs}/master-bedroom:/config
   hostname: master-bedroom
-  ports:
-    - 8300:8300
-    - 8301:8301
 
 remote:
   image: homeassistant/home-assistant
