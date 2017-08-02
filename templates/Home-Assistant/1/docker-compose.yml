@@ -5,7 +5,7 @@ main:
   hostname: main
   ports:
     - 8303:8303
-  network_mode: "host"
+  network_mode: host
 
 master-bedroom:
   image: homeassistant/home-assistant
