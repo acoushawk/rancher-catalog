@@ -5,6 +5,7 @@ main:
   hostname: main
   ports:
     - 8303:8303
+    - 443:8123
   net: host
 
 master-bedroom:
